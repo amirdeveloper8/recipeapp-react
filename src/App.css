@@ -185,9 +185,8 @@
 
 .ReactModal__Content--after-open {
   width: 80%;
-  display: block;
+  display: block !important;
   margin: auto !important;
-  display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
   position: relative !important;
@@ -232,6 +231,12 @@
 }
 
 /*end of recipe app*/
+
+@media (max-width: 468px) {
+  .ReactModal__Content--after-open {
+    width: 95%;
+  }
+}
 
 @keyframes App-logo-spin {
   from {
