@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  overflow-x: hidden !important;
+}
+
+#root {
+  overflow-x: hidden !important;
 }
 
 .App-logo {
@@ -211,6 +216,10 @@
   color: red;
   text-align: left;
   width: 30px;
+}
+
+.close-modal-recipe svg {
+  font-size: 20px;
 }
 
 .title-modal-recipe {

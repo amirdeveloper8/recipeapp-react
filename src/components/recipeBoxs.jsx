@@ -1,5 +1,6 @@
 import React from "react";
 import Modal from "react-modal";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const RecipeBox = (props) => {
   const { title, ingredientLines, image, calories, cautions } = props;
@@ -42,7 +43,7 @@ const RecipeBox = (props) => {
               contentLabel="Example Modal"
             >
               <button className="close-modal-recipe" onClick={closeModal}>
-                <i class="fa fa-close"></i>
+                <AiOutlineCloseCircle />
               </button>
               <h5 className="title-modal-recipe">{title}</h5>
               <p className="text-modal-recipe">
