@@ -28,6 +28,207 @@
   color: #61dafb;
 }
 
+/* recipe app */
+
+.recipe {
+  background: #3e5151; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #decba4,
+    #3e5151
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #decba4,
+    #3e5151
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header-recipe {
+  position: relative;
+}
+
+.header-recipe img {
+  width: 100%;
+}
+
+.header-recipe h1 {
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  width: 100%;
+  font-family: "Changp", cursive;
+  font-weight: 900;
+  font-size: 8vw;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 5px black;
+}
+
+.header-recipe form {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-form input {
+  background: #06beb6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #48b1bf87,
+    #06beb588
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #48b1bf87,
+    #06beb588
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  width: 500px;
+  border: none;
+  color: white;
+  padding: 5px;
+}
+
+.search-form input:focus {
+  outline-width: 0;
+}
+
+.search-form button {
+  background: #06beb6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #48b1bf87,
+    #06beb588
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #48b1bf87,
+    #06beb588
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+  padding: 5px 10px;
+  outline-width: 0;
+}
+
+.search-form button svg {
+  color: white;
+  font-size: 20px;
+}
+
+.recipe-details {
+  padding: 3% 0;
+}
+
+.recipe-box {
+  background: white;
+  padding: 0;
+  box-shadow: 1px 1px 10px #155638;
+  margin: 5% 1%;
+  height: 440px;
+  border: 3px solid rgba(2, 87, 40, 0.37);
+}
+
+.recipe-box h5 {
+  position: absolute;
+  bottom: 105px;
+  text-align: center;
+  width: 84%;
+  padding: 1%;
+  color: rgb(38, 38, 38);
+  margin: 0 8%;
+  border-radius: 50px;
+  background: #22c1c3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fdbb2d,
+    #22c1c3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fdbb2d,
+    #22c1c3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+}
+
+.recipe-box h5:hover {
+  transform: scale(1.1);
+  text-shadow: 1px 1px white;
+  transition: all 0.3s ease;
+}
+
+.recipe-box p {
+  padding: 20px 5px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.recipe-box img {
+  width: 100%;
+  border-bottom: 1px solid rgba(64, 148, 102, 0.604);
+  height: 320px;
+}
+
+.recipe-cont {
+  height: 120px;
+  position: relative;
+}
+
+.ReactModal__Overlay {
+  display: flex;
+  background: rgb(48 84 33 / 50%) !important;
+}
+
+.ReactModal__Content--after-open {
+  width: 80%;
+  display: block;
+  margin: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  position: relative !important;
+  background: #f7f8f8 !important; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #acbb78,
+    #f7f8f8
+  ) !important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #acbb78,
+    #f7f8f8
+  ) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  inset: 0 !important;
+}
+
+.close-modal-recipe {
+  background: transparent;
+  border: none;
+  color: red;
+  text-align: left;
+  width: 30px;
+}
+
+.title-modal-recipe {
+  font-family: cursive;
+  text-align: center;
+  font-weight: 700;
+  color: #3caf7b;
+  text-shadow: 1px 1px black;
+}
+
+.recipe-steps li {
+  font-size: small;
+  font-family: monospace;
+  color: #272727;
+}
+
+/*end of recipe app*/
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
