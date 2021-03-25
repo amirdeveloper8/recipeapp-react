@@ -234,7 +234,7 @@
 
 @media (max-width: 468px) {
   .ReactModal__Content--after-open {
-    width: 95%;
+    width: 96%;
     overflow-y: scroll !important;
   }
 }
